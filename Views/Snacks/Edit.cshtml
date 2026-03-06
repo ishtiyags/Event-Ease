@@ -1,0 +1,16 @@
+﻿@model SnackTrackMvc.Models.Snack
+
+<h2>Edit Snack</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    Name: <input asp-for="Name" />
+    Category: <input asp-for="Category" />
+    Price: <input asp-for="Price" />
+    Description: <input asp-for="Description" />
+
+    <button type="submit">Save</button>
+</form>
+
+<a asp-action="Index">Back</a>
